@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 .body {
-  background: url(./image/budget-bg.png);
+  background: url(image/budget-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
