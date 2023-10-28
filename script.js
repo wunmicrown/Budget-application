@@ -1,6 +1,6 @@
-var arr = []
-var num = 300000
-var num2 = 0;
+let arr = []
+let num = 300000
+let num2 = 0;
 if (localStorage.total) {
     num2 = localStorage.getItem("total")
   }
@@ -12,12 +12,12 @@ if (localStorage.items) {
   }
 function Add() {
   if (ProductName.value !== "" && ProductCost.value !== "" && Quantity.value!=="") {
-    var calc = ProductCost.value * Quantity.value
+    let calc = ProductCost.value * Quantity.value
     num = num - calc
     num2 =Number( num2 )+ calc
     bal.innerHTML = `$${num}.00`
     ttlExp.innerHTML = `$${num2}.00`
-    var obj = {
+    let obj = {
       Name: ProductName.value,
       Cost: ProductCost.value,
       Quantity: Quantity.value,

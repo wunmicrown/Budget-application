@@ -1,6 +1,6 @@
-// var items = JSON.parse(localStorage.getItem("items"));
+// let items = JSON.parse(localStorage.getItem("items"));
 const items = JSON.parse(localStorage.getItem("items")) || [];
-var totalGet = localStorage.getItem("total");
+let totalGet = localStorage.getItem("total");
 function trigger() {
     items.map((items, index) => {
         show.innerHTML += `
@@ -111,7 +111,7 @@ function trigger() {
 }
 trigger();
 function deleteItem(index) {
-    var eachItemDel = items[index].Total;
+    let eachItemDel = items[index].Total;
     show.innerHTML = "";
     items.splice(index, 1);
     totalGet = totalGet - eachItemDel;
